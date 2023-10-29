@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+        background-color: #918383;
+	}
+	
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+		background-color:#000000;
+		position: absolute;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:70px;
+		margin-top: 15px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}	
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #c7c7c7;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+.endocrina .titulo{
+    font-size: 30px;
+    margin-top: 100px;
+    display: flex;
+    background: url(imagenes/foto7.jpg);
+    height: 200px;
+    padding: 40px;
+    background-size: cover;
+}
+.endocrina .titulo p{
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*Diabetes*/
+
+
+.diab{
+	margin-left: 45px;
+	margin-right: 1500px;
+}
+.diab h3{
+    font-size: 40px;
+    padding-left: 30px;
+    margin-top: 30px;
+	margin-bottom: 31px;
+}
+.diab h3{
+	margin-top: 40px;
+}
+.diab p{
+    font-size: 20px;
+    padding: 10px;
+    width: 400px;
+	margin-bottom: 30px;
+	background-color: #5c4c4c;
+	border-radius: 30px;
+}
+.diab .img1{
+    width: 400px;
+	height: 300px;
+	border-radius: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 100px;
+	filter: drop-shadow(10px 8px 6px #dbb686);
+}
+.diab .img1{
+	object-fit: cover;
+    transition: transform 0.1s;
+}
+.diab .img1:hover{
+	transform: scale(1.1);
+}  
+.tipos{
+    display: flex;
+	position: relative;
+	margin-top: -460px;
+	margin-left: 410px;
+	margin-bottom: 20px;
+}
+.tipos .TIPO1{
+	margin-left: 100px;
+	margin-top: -235px;
+}
+.tipos .TIPO1 h4{
+    font-size: 40px;
+}
+.tipos .TIPO1 p{
+    font-size: 20px;
+	margin-top: 25px;
+	width: 350px;
+	background-color: #5c4c4c;
+	border-radius: 30px;
+	padding: 10px;
+	height: 520px;
+}
+.tipos .TIPO2 h4{
+    font-size: 40px;
+	margin-left: 30px;
+}
+.tipos .TIPO2{
+	margin-left: 33px;
+	margin-top: -235px;
+}
+.tipos .TIPO2 p{
+    font-size: 20px;
+	margin-right: -60px;
+	margin-top: 25px;
+	margin-left: 30px;
+	width: 350px;
+	height: 520px;
+	margin-bottom: 30px;
+	background-color: #5c4c4c;
+	padding: 10px;
+	border-radius: 30px;
+}
+.CONS{
+	background: url(imagenes/foto8.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+    height: 500px;
+	width: 1349px;
+	text-align: center;
+	position: absolute;
+}
+.CONS h4{
+	font-size: 40px;
+	margin-top: 150px;
+}
+.CONS p{
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+.trat{
+	margin-top: 520px;
+	margin-bottom: 60px;
+	display: flex;
+	width: auto;
+	height: 880px;
+}
+.trat .trati{
+	background: #975b17;
+	height: 880px;
+	width: 50%;
+}
+.trat .trati h1{
+	font-size: 60px;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-top: 20px;
+	color: #fff;
+}
+.trat .trati p{
+	font-size: 19px;
+	line-height: 30px;
+	width: 50%;
+	margin: auto;
+	margin-left: 80px;
+	color: #fff;
+}
+.trat .tratd{
+	background: url(imagenes/foto9.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 710px;
+	height: 880px;
+}
+
+
+/*Hipotiroidismo*/
+
+.tit{
+	text-align: center;
+	align-items: center;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+.hipo{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.hipo p{
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+.cus{
+	font-size: 40px;
+	text-align: center;
+}
+.causas {
+	background-color: #918383;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+/*hola*/
+/* Estilos para el contenedor principal de causas */
+.causas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  /* Estilos para cada cuadro de causa */
+  .causa-box {
+	flex-basis: calc(50% - 20px); /* Ancho del 50% con espacio entre los cuadros */
+	padding: 20px;
+	margin: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	transition: transform 0.3s ease-in-out; /* Animación de transformación */
+  }
+  
+  /* Estilos para el encabezado (h4) de cada causa */
+  .causa-box h4 {
+	margin-top: 0;
+	font-size: 1.2rem;
+	color: #333;
+  }
+  
+  /* Estilos para el párrafo (p) de cada causa */
+  .causa-box p {
+	font-size: 1rem;
+	color: #666;
+  }
+  
+  /* Estilos al pasar el cursor sobre un cuadro */
+  .causa-box:hover {
+	transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 9); /* Sombra al pasar el cursor */
+  }
+/*hola*/
+.sint{
+	margin-top: 20px;
+	display: flex;
+	width: auto;
+	height: 550px;
+}
+.sint .der{
+	background: #975b17;
+	height: 550px;
+	width: 691px;
+}
+.sint .der h2{
+	font-size: 60px;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-top: 20px;
+	color: #fff;
+}
+.sint .der p{
+	font-size: 19px;
+	line-height: 30px;
+	width: 50%;
+	margin: auto;
+	margin-left: 80px;
+	color: #fff;
+}
+.sint .izq{
+	background: url(imagenes/foto10.png);
+	background-size: cover;
+	background-position: center;
+	width: 657px;
+	height: 550px;
+}
+
+
+.trate{
+	margin-bottom: 240px;
+	display: flex;
+	width: auto;
+	height: 550px;
+}
+.trate .izq{
+	background: #975b17;
+	height: 750px;
+	width: 50%;
+}
+.trate .izq h2{
+	font-size: 60px;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-top: 20px;
+	color: #fff;
+}
+.trate .izq p{
+	font-size: 19px;
+	line-height: 30px;
+	width: 50%;
+	margin: auto;
+	margin-left: 80px;
+	color: #fff;
+}
+.trate .der{
+	background: url(imagenes/foto11.png);
+	background-size: cover;
+	background-position: center;
+	width: 710px;
+	height: 750px;
+} 
+
+
+/*Hipertiroidismo*/
+.titu{
+	text-align: center;
+	align-items: center;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+.hiper{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.hiper p{
+	font-size: 30px;
+	margin-left: 50px;
+}
+.cau{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.cau-box{
+	flex-basis: calc(50% - 20px); /* Ancho del 50% con espacio entre los cuadros */
+	padding: 20px;
+	margin: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	transition: transform 0.3s ease-in-out; /* Animación de transformación */
+}
+.cau-box h4{
+	margin-top: 0;
+	font-size: 1.2rem;
+	color: #333;
+}
+.cau-box p{
+	font-size: 1rem;
+	color: #666;
+}
+.cau-box:hover{
+	transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 9); /* Sombra al pasar el cursor */
+}
+.sit{
+	margin-top: 20px;
+	display: flex;
+	width: auto;
+	height: 550px;
+}
+.sit .izqui{
+	background: url(imagenes/foto11.png);
+	background-size: cover;
+	background-position: center;
+	width: 657px;
+	height: 550px;
+}
+.sit .dere{
+	background: #975b17;
+	height: 550px;
+	width: 691px;
+}
+.sit .dere h2{
+    font-size: 60px;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-top: 20px;
+	color: #fff;
+}
+.sit .dere p{
+	font-size: 19px;
+	line-height: 30px;
+	width: 50%;
+	margin: auto;
+	margin-left: 80px;
+	color: #fff;
+}
+
+.treta{
+	margin-bottom: 440px;
+	display: flex;
+	width: auto;
+	height: 550px;
+}
+.treta .tretaizqui{
+	background: #975b17;
+	height: 950px;
+	width: 50%;
+}
+.treta .tretaizqui h2{
+	font-size: 60px;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-top: 20px;
+	color: #fff;
+}
+.treta .tretaizqui p{
+	font-size: 19px;
+	line-height: 30px;
+	width: 50%;
+	margin: auto;
+	margin-left: 80px;
+	color: #fff;
+}
+.treta .tretadere{
+	background: url(imagenes/foto11.png);
+	background-size: cover;
+	background-position: center;
+	width: 710px;
+	height: 950px;
+}
+
+
+/*tiroides*/
+.titulo1{
+	text-align: center;
+	align-items: center;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+.tiroi{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.tiroi p{
+	font-size: 30px;
+	margin-left: 50px;
+}
+.trans{
+	margin-bottom: 830px;
+	display: flex;
+	width: auto;
+	height: 550px;
+}
+.trans .transizqui{
+	background: url(imagenes/foto11.png);
+	background-size: cover;
+	background-position: center;
+	width: 657px;
+	height: 1380px;
+}
+.trans .transdere{
+	background: #975b17;
+	height: 1380px;
+	width: 691px;
+}
+.trans .transdere h2{
+	font-size: 60px;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-top: 20px;
+	color: #fff;
+}
+.trans .transdere h4{
+	font-size: 25px;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-top: 20px;
+	color: #fff;
+}
+.trans .transdere p{
+	font-size: 19px;
+	line-height: 30px;
+	width: 50%;
+	margin: auto;
+	margin-left: 80px;
+	color: #fff;
+}
+.tratem{
+	margin-bottom: 400px;
+	display: flex;
+	width: auto;
+	height: 550px;
+}
+.tratem .tratemizqui{
+	background: #975b17;
+	height: 950px;
+	width: 50%;
+}
+.tratem .tratemizqui h2{
+	font-size: 60px;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+	margin-left: 80px;
+	margin-top: 20px;
+	color: #fff;
+}
+.tratem .tratemizqui p{
+	font-size: 19px;
+	line-height: 30px;
+	width: 50%;
+	margin: auto;
+	margin-left: 80px;
+	color: #fff;
+}
+.tratem .tratemdere{
+	background: url(imagenes/foto11.png);
+	background-size: cover;
+	background-position: center;
+	width: 710px;
+	height: 950px;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: #000000;
+    margin-top: 130px;
+}
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .box figure img{
+    width: 200px;
+    border-radius: 100px;
+}
+.pie-pagina .grupo1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo2 small{
+    font-size: 15px;
+}

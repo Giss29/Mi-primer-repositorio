@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(imagenes/foto3.png);
+    background-size: cover;
+    background-position: center;
+}
+.LOGIN{
+    width: 450px;
+    background: transparent;
+    border:2px rgba(255, 255, 255, 2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+    color: #fff;  
+    border-radius: 10px;
+    padding: 30px 40px;  
+    position: absolute;
+    transition: all 1s ease;
+}
+.LOGIN .LOGIN1 h2{
+    text-align: center;
+    font-size: 36px;
+}
+.LOGIN .LOGIN1 .datos{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 30px 0;
+}
+.datos input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+.datos input::placeholder{
+    color: #fff;
+}
+.datos i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.LOGIN .Contraseña{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.LOGIN .Contraseña label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.LOGIN .Contraseña a{
+    color: #020202;
+    text-decoration: none;
+}
+.LOGIN .Contraseña a:hover{
+    text-decoration: underline;
+}
+.LOGIN .boton{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #070707;
+    font-weight: 600;
+    transition: background-color .3s ease;
+    transition: transform 0.1s;
+}
+.LOGIN .boton:hover{
+    background-color: rgba(158, 145, 73, 0.842);
+    transform: scale(1.1);
+}
+.LOGIN .Registrate{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.LOGIN .Registrate p input{
+    font-size: 14.5px;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.LOGIN .Registrate p input:hover{
+    text-decoration: underline;
+}
+
+/*registrar*/
+.Registrarce{
+    width: 450px;
+    background: transparent;
+    border:2px rgba(255, 255, 255, 2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+    color: #fff;  
+    border-radius: 10px;
+    padding: 30px 40px; 
+    position: absolute;
+    transition: all 1s ease;
+}
+.Registrarce .Registrarce1 h2{
+    text-align: center;
+    font-size: 36px;
+}
+.Registrarce .Registrarce1 .datosr{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 30px 0;
+}
+.datosr input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+.datosr input::placeholder{
+    color: #fff;
+}
+.datosr i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.Registrarce .boton{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #070707;
+    font-weight: 600; 
+    transition: background-color .3s ease;
+    transition: transform 0.1s;
+}
+.Registrarce .boton:hover{
+    background-color: rgba(158, 145, 73, 0.842);
+    transform: scale(1.1);
+}
+.hide{
+    position: absolute;
+    transform: translateY(-300%); 
+}
