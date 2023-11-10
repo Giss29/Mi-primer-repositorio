@@ -7,9 +7,9 @@ select *from citas;
 
 insert into paciente 
 values
-(12345,"maria","perez",2121212121,"O+","femenino"),
-(67891,"juan","castro",3232323232,"A-","masculino"),
-(23456,"valentina","suarez",4545454545,"O-","femenino");
+(12345,"maria","perez",2121212121,"maria@gmail.com","O+","femenino"),
+(67891,"juan","castro",3232323232,"juan@gmail.com","A-","masculino"),
+(23456,"valentina","suarez",4545454545,"valentina@gmail.com","O-","femenino");
 
 insert into medico
 values
