@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title> TAKE CARE WITH US G.A. INICIAR SESION </title>
+    <link rel="shortcut icon" href="css/imagenes/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/ESTILOS AGENDA.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="shortcut icon" href="css/imagenes/logo.ico" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="LOGIN">
+        <div class="LOGIN1">
+            <h2>AGENDA TU CITA</h2>
+            <form action="php/AGENDAR.php" method="POST">
+                <div class="datos">
+                    <i class="icon-usuario"></i>
+                    <input
+                    type="text"
+                    placeholder="Tipo de documento"
+                    class="dato"
+                    autocomplete="off"
+                    required
+                    />
+                </div>
+                <div class="datos">
+                    <i class="icon-usuario"></i>
+                    <input
+                    type="number"
+                    placeholder="Numero de documento"
+                    class="dato"
+                    autocomplete="off"
+                    required
+                    name="ced1"
+                    />
+                </div>
+                <div class="datos">
+                    <i class="icon-usuario"></i>
+                    <input
+                    type="date"
+                    placeholder="Fecha de la cita"
+                    class="dato"
+                    autocomplete="off"
+                    required
+                    name="fech"
+                    />
+                </div>
+                <div class="datos">
+                    <i class="icon-usuario"></i>
+                    <input
+                    type="time"
+                    placeholder="Hora de la cita"
+                    class="dato"
+                    autocomplete="off"
+                    required
+                    name="Hor"
+                    />
+                </div>
+                <div class="datos">
+                    <i class="icon-usuario"></i>
+                    <input
+                    type="text"
+                    placeholder="Que tipo de cita"
+                    class="dato"
+                    autocomplete="off"
+                    required
+                    name="Cit"
+                    />
+                </div>
+                <p class="datos"><select id=estatura placeholder="Doctor que desea escoger" name="Doc">
+                    <option value="Julian Velez">Julian Velez</option>
+                    <option value="Julian Velez">Sara Soto</option>
+                    <option value="Julian Velez">Sofia Jiminez</option>
+                </select> <i class="icon-usuario"></i></p>
+            <a href="index2.html"><button type="submit" class="boton" >Agenda tu Cita</button></a>
+            <a href="AGENDAR.html"><button type="reset" class="boton">Escribise algo mal?</button></a>
+        </form>        
+        </div>
+    </div>
